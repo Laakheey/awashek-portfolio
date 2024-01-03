@@ -1,5 +1,6 @@
 
 const Navbar = ({ scrollToSection }: any) => {
+  console.log("🚀 ~ file: Navbar.tsx:3 ~ Navbar ~ scrollToSection:", scrollToSection);
   return (
     <div className="flex flex-row px-3 bg-slate-600 justify-between text-white items-center">
       <p className="flex items-center lg:text-3xl md:text-2xl sm:text-xl h-20">
