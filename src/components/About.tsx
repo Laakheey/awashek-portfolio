@@ -51,11 +51,13 @@ const About = ({id}:NavIdProps) => {
           </div>
 
           <button className="text-[#fff] py-1 rounded bg-[#EF6D58] font-small w-32">
+            <a href="#contactMe">
             Hire Me &nbsp;
             <i
               className="fa-solid fa-arrow-up-long rotate-[38deg] text-[18px]"
               style={{ color: "#fff" }}
             ></i>
+            </a>
           </button>
         </div>
 

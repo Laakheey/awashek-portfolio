@@ -1,9 +1,12 @@
 import { NavIdProps } from "./Home";
 
-const ContactMe = ({id}:NavIdProps) => {
+const ContactMe = ({ id }: NavIdProps) => {
   return (
     <>
-      <div id={id} className="flex-col flex justify-center items-center my-10 gap-3 ">
+      <div
+        id={id}
+        className="flex-col flex justify-center items-center my-10 gap-3 "
+      >
         <p className="border-t-4 border-[#ef6d58] w-20"></p>
         <p className="font-medium text-2xl uppercase text-[#EF6D58]">
           contact me
@@ -83,14 +86,14 @@ const ContactMe = ({id}:NavIdProps) => {
       </div>
 
       <button className="bg-[#EF6D58] px-3 mx-3 py-2 rounded-md text-[#fff] font-medium float-right">
-        Let's Talks &nbsp;
-        <i
-          className="fa-solid fa-arrow-up-long rotate-[38deg] text-[18px]"
-          style={{ color: "#fff" }}
-        ></i>
+        <a href="#contactMe">
+          Let's Talks &nbsp;
+          <i
+            className="fa-solid fa-arrow-up-long rotate-[38deg] text-[18px]"
+            style={{ color: "#fff" }}
+          ></i>
+        </a>
       </button>
-
-
     </>
   );
 };
