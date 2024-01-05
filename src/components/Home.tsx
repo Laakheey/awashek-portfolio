@@ -7,10 +7,10 @@ const Home = ({ id }: NavIdProps) => {
     <div id={id} className="flex pt-10 lg:flex-row md:flex-row flex-col">
       <div>
         <p className="text-[#EF6D58] text-lg">Hi there 👋</p>
-        <p className="text-[2rem] font-medium">
+        <p className="lg:text-[2rem] text-[1.5rem] font-medium">
           I'm UI/UX Designer With Passion of Designing
         </p>
-        <p className="text-[2rem] text-[#EF6D58] font-medium">
+        <p className="lg:text-[2rem] text-[1.5rem] text-[#EF6D58] font-medium">
           Web & Mobile Interface
         </p>
         <p>
