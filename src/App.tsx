@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <Navbar scrollToSection={scrollToSection}/>
-      <div className="mx-5 mt-12 px-16">
+      <div className="lg:mx-5 mt-12 px-16 mx-1">
         <Home id={'home'}/>
         <About id={'about'}/>
         <Services id={'services'}/>

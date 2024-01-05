@@ -9,7 +9,7 @@ const Footer = () => {
           <li><a href="#project">Project</a></li>
           <li><a href="#contactMe">Contact</a></li>
         </ul>
-        <div className="flex justify-between border-t-2 mt-5 md:flex-col sm:flex-col sm:items-center pt-2 lg:flex-row">
+        <div className="flex justify-between border-t-2 mt-5 md:flex-col items-center flex-col sm:flex-col sm:items-center pt-2 lg:flex-row">
           <p className="font-medium">Ⓒ 2023. All Rights Reserved</p>
           <p className="font-medium">
             Created by <span className="text-[#EF6D58]">Sunil Pandey</span>

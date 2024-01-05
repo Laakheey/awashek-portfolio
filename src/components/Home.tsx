@@ -4,7 +4,7 @@ export type NavIdProps = {
 
 const Home = ({ id }: NavIdProps) => {
   return (
-    <div id={id} className="flex">
+    <div id={id} className="flex pt-10 lg:flex-row md:flex-row flex-col">
       <div>
         <p className="text-[#EF6D58] text-lg">Hi there 👋</p>
         <p className="text-[2rem] font-medium">

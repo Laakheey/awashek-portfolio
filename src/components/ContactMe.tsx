@@ -20,11 +20,11 @@ const ContactMe = ({ id }: NavIdProps) => {
         Let's Chat.
       </div>
 
-      <div className="flex lg:flex-row md:flex-col sm:flex-col">
+      <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col">
         <div className="flex-1">
           <p className="lg:text-[4rem] md:text-[3rem] sm:[3rem] font-bold">
             Tell me about your <span className="text-[#ef6d58]">project.</span>
-          </p>
+          </p>  
           <p className="text-[#ef6c585e]">Let's create something together🤘</p>
         </div>
 
