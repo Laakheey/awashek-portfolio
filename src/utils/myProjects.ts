@@ -1,4 +1,5 @@
 import image from '../assets/react.svg';
+
 export const myProject = {
   project1: {
     image: image,

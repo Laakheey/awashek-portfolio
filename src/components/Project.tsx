@@ -1,6 +1,7 @@
 import { NavIdProps } from "./Home";
 import ServiceProjectImage from "../utils/ServiceProjectImage";
 import { myProject } from "../utils/myProjects";
+import Heading from "../utils/Heading";
 
 const Project = ({ id }: NavIdProps) => {
   return (
@@ -9,10 +10,7 @@ const Project = ({ id }: NavIdProps) => {
         id={id}
         className="flex-col flex justify-center items-center my-10 gap-3 "
       >
-        <p className="border-t-4 border-[#ef6d58] w-20"></p>
-        <p className="font-medium text-2xl uppercase text-[#EF6D58]">
-          checkout my projects
-        </p>
+        <Heading heading="checkout my projects"/>
       </div>
 
       <div className="border border-[#EF6D58] text-[#EF6D58] rounded-[50%] w-[5rem] text-xs px-2 py-0.5 my-2">

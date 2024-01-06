@@ -20,15 +20,6 @@ const Home = ({ id }: NavIdProps) => {
           solutions that are visually stunning clean and easy to navigate user
           interface.
         </p>
-        {/* <button className="text-[#fff] px-2 py-1 rounded bg-[#EF6D58] font-small ">
-          <a href="#project">
-            See My PROJECT &nbsp;
-            <i
-              className="fa-solid fa-arrow-up-long rotate-[38deg] text-[18px]"
-              style={{ color: "#fff" }}
-            ></i>
-          </a>
-        </button> */}
         <Button url="#project" buttonValue="See My PROJECT"/>
       </div>
 
