@@ -18,38 +18,15 @@ const Project = ({ id }: NavIdProps) => {
       </div>
 
       <div className="grid gap-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-        {/* <ServiceProjectImage
-          image={myProject.project1.image}
-          heading={myProject.project1.heading}
-          description={myProject.project1.description}
-          button={myProject.project1.button}
-        />
-
-        <ServiceProjectImage
-          image={myProject.project2.image}
-          heading={myProject.project2.heading}
-          description={myProject.project2.description}
-          button={myProject.project2.button}
-        />
-
-        <ServiceProjectImage
-          image={myProject.project3.image}
-          heading={myProject.project3.heading}
-          description={myProject.project3.description}
-          button={myProject.project3.button}
-        /> */}
-        {[0, 1, 2].map((i) => {
-          return (
-            <>
-              <ServiceProjectImage
-                image={mProjects[i].image}
-                heading={mProjects[i].heading}
-                description={mProjects[i].description}
-                button={mProjects[i].button}
-              />
-            </>
-          );
-        })}
+        {[0, 1, 2].map((i) => (
+          <ServiceProjectImage
+            key={i}
+            image={mProjects[i].image}
+            heading={mProjects[i].heading}
+            description={mProjects[i].description}
+            button={mProjects[i].button}
+          />
+        ))}
       </div>
     </>
   );

@@ -17,7 +17,7 @@ const Services = ({ id }: NavIdProps) => {
         My Services
       </div>
 
-      <div className="flex lg:flex-row md:flex-col sm:flex-col sm:gap-3 flex-col">
+      <div className="flex lg:flex-row sm:gap-3 flex-col">
         <div className="flex flex-col md:mr-64 lg:mr-0 md:w-full">
           <p className="text-2xl">
             Why Hire Me For Your Next{" "}
@@ -31,7 +31,7 @@ const Services = ({ id }: NavIdProps) => {
           <Button url="#contactMe" buttonValue="Contact me"/>
         </div>
         <div className="flex lg:flex-row sm:flex-row md:flex-row flex-col gap-5 lg:gap-10">
-          <div className="bg-[#E1E1E2] lg:w-64 md:w-32 h-44 border rounded flex-1 px-2 w-full">
+          <div className="bg-[#E1E1E2] lg:w-54 md:w-32 h-44 border rounded flex-1 px-2 w-full">
             <i
               className="fa-regular fa-gem text-[2rem] py-2 pt-5"
               style={{ color: "#EF6D58" }}
