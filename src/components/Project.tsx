@@ -1,6 +1,6 @@
 import { NavIdProps } from "./Home";
 import ServiceProjectImage from "../utils/ServiceProjectImage";
-import { myProject } from "../utils/myProjects";
+import { mProjects } from "../utils/myProjects";
 import Heading from "../utils/Heading";
 
 const Project = ({ id }: NavIdProps) => {
@@ -10,7 +10,7 @@ const Project = ({ id }: NavIdProps) => {
         id={id}
         className="flex-col flex justify-center items-center my-10 gap-3 "
       >
-        <Heading heading="checkout my projects"/>
+        <Heading heading="checkout my projects" />
       </div>
 
       <div className="border border-[#EF6D58] text-[#EF6D58] rounded-[50%] w-[5rem] text-xs px-2 py-0.5 my-2">
@@ -18,7 +18,7 @@ const Project = ({ id }: NavIdProps) => {
       </div>
 
       <div className="grid gap-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-        <ServiceProjectImage
+        {/* <ServiceProjectImage
           image={myProject.project1.image}
           heading={myProject.project1.heading}
           description={myProject.project1.description}
@@ -37,7 +37,19 @@ const Project = ({ id }: NavIdProps) => {
           heading={myProject.project3.heading}
           description={myProject.project3.description}
           button={myProject.project3.button}
-        />
+        /> */}
+        {[0, 1, 2].map((i) => {
+          return (
+            <>
+              <ServiceProjectImage
+                image={mProjects[i].image}
+                heading={mProjects[i].heading}
+                description={mProjects[i].description}
+                button={mProjects[i].button}
+              />
+            </>
+          );
+        })}
       </div>
     </>
   );
