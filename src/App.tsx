@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./App.css";
 import { About, ContactMe, Home, Navbar, Project, Services } from "./components";
 import Footer from "./components/Footer";
@@ -13,6 +14,10 @@ function App() {
       });
     }
   };
+
+  useEffect(()=>{
+    useRef
+  },[])
 
 
   return (

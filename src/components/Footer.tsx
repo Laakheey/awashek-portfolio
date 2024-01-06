@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="mt-20 mb-10">
+      <div className="mt-20 mb-10 pr-6">
         <ul className="flex flex-row gap-7 justify-center">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>

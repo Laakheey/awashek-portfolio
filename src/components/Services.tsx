@@ -1,4 +1,5 @@
 import Image from "../assets/wave-pulse.svg";
+import Button from "../utils/Button";
 import { NavIdProps } from "./Home";
 
 const Services = ({ id }: NavIdProps) => {
@@ -29,7 +30,7 @@ const Services = ({ id }: NavIdProps) => {
             to navigate design for user. My passion is designing & solving
             problems through user experience and research.
           </p>
-          <button className="text-[#fff] px-2 py-1 rounded bg-[#EF6D58] font-small w-32 mt-1">
+          {/* <button className="text-[#fff] px-2 py-1 rounded bg-[#EF6D58] font-small w-32 mt-1">
             <a href="#contactMe">
             Contact me &nbsp;
             <i
@@ -37,7 +38,8 @@ const Services = ({ id }: NavIdProps) => {
               style={{ color: "#fff" }}
             ></i>
             </a>
-          </button>
+          </button> */}
+          <Button url="#contactMe" buttonValue="Contact me"/>
         </div>
         <div className="flex lg:flex-row sm:flex-row md:flex-row flex-col gap-5 lg:gap-10">
           <div className="bg-[#E1E1E2] lg:w-64 md:w-32 h-44 border rounded flex-1 px-2 w-full">

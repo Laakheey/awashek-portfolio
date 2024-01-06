@@ -1,3 +1,4 @@
+import Button from "../utils/Button";
 import { NavIdProps } from "./Home";
 
 const About = ({ id }: NavIdProps) => {
@@ -53,7 +54,7 @@ const About = ({ id }: NavIdProps) => {
             </div>
           </div>
 
-          <button className="text-[#fff] py-1 rounded bg-[#EF6D58] font-small w-32">
+          {/* <button className="text-[#fff] py-1 rounded bg-[#EF6D58] font-small w-32">
             <a href="#contactMe">
               Hire Me &nbsp;
               <i
@@ -61,7 +62,8 @@ const About = ({ id }: NavIdProps) => {
                 style={{ color: "#fff" }}
               ></i>
             </a>
-          </button>
+          </button> */}
+          <Button url="#contactMe" buttonValue="Hire Me"/>
         </div>
 
         <img src="./vite.svg" className="w-[100px] h-[200px] my-5" />

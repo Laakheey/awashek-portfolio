@@ -1,3 +1,4 @@
+import Button from "../utils/Button";
 import { NavIdProps } from "./Home";
 
 const ContactMe = ({ id }: NavIdProps) => {
@@ -5,7 +6,7 @@ const ContactMe = ({ id }: NavIdProps) => {
     <>
       <div
         id={id}
-        className="flex-col flex justify-center items-center my-10 gap-3 "
+        className="flex-col flex justify-center items-center my-10 gap-3"
       >
         <p className="border-t-4 border-[#ef6d58] w-20"></p>
         <p className="font-medium text-2xl uppercase text-[#EF6D58]">
@@ -20,9 +21,9 @@ const ContactMe = ({ id }: NavIdProps) => {
         Let's Chat.
       </div>
 
-      <div className="flex lg:flex-row md:flex-col sm:flex-col flex-col">
+      <div className="flex lg:flex-row flex-col">
         <div className="flex-1">
-          <p className="lg:text-[4rem] md:text-[3rem] sm:[3rem] font-bold">
+          <p className="lg:text-[4rem] text-[3rem] font-bold">
             Tell me about your <span className="text-[#ef6d58]">project.</span>
           </p>  
           <p className="text-[#ef6c585e]">Let's create something together🤘</p>
@@ -71,7 +72,7 @@ const ContactMe = ({ id }: NavIdProps) => {
             </div>
           </div>
 
-          <div className="flex my-7">
+          <div className="flex lg:my-2">
             <div className="w-full">
               <label htmlFor="message">Message</label> <br />
               <input
@@ -85,7 +86,7 @@ const ContactMe = ({ id }: NavIdProps) => {
         </div>
       </div>
 
-      <button className="bg-[#EF6D58] px-3 mx-3 py-2 rounded-md text-[#fff] font-medium float-right">
+      {/* <button className="bg-[#EF6D58] px-3 mx-3 py-2 rounded-md text-[#fff] font-medium float-right">
         <a href="#contactMe">
           Let's Talks &nbsp;
           <i
@@ -93,7 +94,10 @@ const ContactMe = ({ id }: NavIdProps) => {
             style={{ color: "#fff" }}
           ></i>
         </a>
-      </button>
+      </button> */}
+      <div className="lg:float-right pr-6">
+        <Button url="#contactMe" buttonValue="Let's Talks"/>
+      </div>
     </>
   );
 };
